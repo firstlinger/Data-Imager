@@ -1,2 +1,2 @@
-# Data-visualizer-
+# Data-visualizer
 A data visualizer. Literally.
