@@ -4,12 +4,12 @@ coordinatex=0
 coordinatey=0
 
 
-def human_format(num):
-    magnitude = 0
+def decfor(num):
+    a = 0
     while abs(num) >= 1000:
-        magnitude += 1
+        a += 1
         num /= 1000.0
-    return '%.2f%s' % (num, ['', 'K', 'M', 'G', 'T', 'P'][magnitude])
+    return '%.2f%s' % (num, ['', 'K', 'M', 'G', 'T', 'P'][a])
 
 
 args = sys.argv
@@ -30,7 +30,7 @@ try:
  bytes = int(input())
 except Exception as e:
     print(str(e))
-print(human_format(height*width*bytes)+"B"+ "("+ str(height*width*bytes*8)+"bits"+")"+" imageable")
+print(decfor(height*width*bytes)+"B"+ "("+ str(height*width*bytes*8)+"bits"+")"+" imageable")
 print('It will exclude overflowed data...')
 imagemap = numpy.zeros((width,height,1))
 
