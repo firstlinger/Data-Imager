@@ -9,7 +9,7 @@ You can contribute to this project for other people looking fun things.
 
 # To use
 Install opencv by: 
-pip3 install opencv-python
+ pip3 install opencv-python
 
 To use, just excute: 
-python3 image_visualizer.py [your file name]
+ python3 image_visualizer.py [your file name]
