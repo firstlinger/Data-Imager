@@ -26,7 +26,7 @@ try:
  height = int(input())
  print('width:', end='')
  width = int(input())
- print('bits per pixel(bytes):', end='')
+ print('bytes per pixel:', end='')
  bytes = int(input())
 except Exception as e:
     print(str(e))
